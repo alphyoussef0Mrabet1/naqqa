@@ -11,6 +11,16 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
 hr{
 
     border-radius: 2em;
@@ -35,6 +45,7 @@ html{
 }
 
 body{
+
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
@@ -43,11 +54,11 @@ body{
 }
 
 header{
-    margin-top: 20px;
+  padding: 30px;
+    margin-top: 0px;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
     background-color: transparent ;
     filter: drop-shadow(10px);
     display: flex;
@@ -100,7 +111,7 @@ nav a.active{
 }
 .about .about-img img{
     width: 300px;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 .about .content{
     margin-left: 30px;
@@ -119,17 +130,16 @@ nav a.active{
     margin-bottom: 40px;
 }
 .about .content p{
+
     color: #ffff;
     line-height: 1.8;
     margin-bottom:70px;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 
-.about .btn {
-    background: #a7a5a5;
-    border: #000000;
-}
+
+
 
 /*services*/
 
@@ -167,6 +177,7 @@ nav a.active{
     margin-bottom: 20px;
 }
 .services .boxs .box p{
+  font-size: 15px;
     color: #ffffff;
     margin-bottom: 50px;
 }
@@ -182,7 +193,6 @@ nav a.active{
     background: #d62929;
     border: #000000;
 }
-
 
 
 
@@ -216,6 +226,7 @@ span{
 }
 
 .home-content p{
+  
     font-size: 1.6rem;
 }
 
@@ -271,12 +282,12 @@ span{
 }
 
 .btn{
+
     display: inline-block;
     padding: 1rem 2.8rem;
     background-color: black;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color:red;
     letter-spacing: 0.3rem;
     font-weight: 600;
     border: 2px solid red;
@@ -290,6 +301,45 @@ span{
     color: #111;
     box-shadow: 0 0 25px red;
 }
+
+
+header nav .nav-links a{
+  color: #fff;
+  margin-left: 50px;
+}
+header nav .nav-links a:hover,
+header nav .nav-links a.active{
+  color: #852c2c;
+}
+
+#btn-menu{
+  display: none;
+}
+
+
+
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header h1{
+  color: #e4e4e4;
+}
+header nav .nav-links a{
+  color: #fff;
+  margin-left: 50px;
+}
+header nav .nav-links a:hover,
+header nav .nav-links a.active{
+  color: #ffff;
+}
+
+
+
+
 
 /* start Portfolio */
 .portfolio{
@@ -343,6 +393,7 @@ span{
 /* start Contact */
 
 .contact{
+  
     background: #0f0e0e;
 
 }
@@ -353,7 +404,11 @@ span{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.contact form input{
+
+
+
+
+.contact form input {
     width: 48%;
     font-size: 18px;
     padding: 15px 10px;
@@ -363,7 +418,7 @@ span{
     border-radius: 10px;
 }    
 .contact form textarea{
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(224, 15, 15, 0.3);
     outline: none;
     border-radius: 10px;
     width: 100%;
@@ -372,12 +427,11 @@ span{
 
 .contact form textarea:focus,
 .contact form input:focus{
-    border-color: #fcfcfc;
+    border-color: #0f0f0f;
 }    
 .contact form button{
     margin: 40px auto 0;
     cursor: pointer;
-    background-color: #9c0808;
 }    
 
 
@@ -401,11 +455,12 @@ html{
 }
 .btn{
     padding: 15px 30px;
-    color: #1c1e22;
+    color: #ffffff;
     font-weight: 500;
     background-color: #000000;
     border-radius: 10px;
     border: 1px solid #ff0000;
+    
 }
 .btn:hover{
     color: #9b2626;
@@ -439,7 +494,33 @@ section{
 }
 
 
+.card-header{
+  padding: 1px;
+  background: #741919;
 
+}
+.card a {
+text-decoration: none;
+}
+
+.card{
+  background-color: #0f0e0e;
+}
+.card-title{
+  padding: 10px;
+  color: #9b2626;
+  font-size: 20px;
+  transition: 2s;
+}
+
+.card-title:hover{
+  letter-spacing: 9px;
+  transition: 0.5s;
+}
+
+.card-body a{
+  text-decoration: none;
+}
 
 
 
@@ -470,24 +551,28 @@ section{
 
 @media(max-width:1200px){
     .contanier{
-        width: 90%;
+        width: 100%;
+
     }    
     .hero .content h1{
         font-size: 50px;
     }    
     .hero .content p{
+        
         font-size: 25px;
     }    
     .hero .hero-img img{
         width: 380px;
     }    
     .hero{
+      
         padding-bottom: 40px;
     }    
     .about .content h3{
         font-size: 20px;
     }    
     .about .content p{
+      font-size: 17px;
         margin-bottom: 50px;
     }    
     .about .about-img img{
@@ -506,6 +591,7 @@ section{
         font-size: 40px;
     }    
     .hero .content p{
+
         font-size: 22px;
     }    
     .hero .hero-img img{
@@ -554,34 +640,48 @@ section{
         color: #fff;
         font-size: 40px;
 
+        width: 100%;
+
     }    
+
+    
     header nav .nav-links{
+      
         position: absolute;
         top: -350px;
-        left: 0;
         width: 100%;
         display: flex;
         flex-direction: column;
         background-color: #1c1e22;
     }    
     header nav .nav-links.active{
+      transition: 1s;
         top: 100%;
     }    
+
+
     header nav .nav-links a{
         width: 100%;
         margin: auto;
         padding: 20px;
         text-align: center;
         font-size: 20px;
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid #852c2c;
     }    
     header nav .nav-links a.active,
     header nav .nav-links a:hover{
-        background-color: #ffaa17;
+        background-color: #9b2626;
         color: #1c1e22;
     }    
 }    
 @media(max-width:670px){
+  .home{
+padding-left: 20px;
+  }
+  .nav{
+    width: 10%;
+    
+  }
     .hero .content h1{
         font-size: 40px;
     }    
@@ -615,6 +715,23 @@ section{
 
 
 @media (max-width: 995px) {
+
+  #btn-menu{
+    
+    display: block;
+    color: #fff;
+    font-size: 40px;
+
+}
+  .nav-links{
+    position: absolute;
+      padding-top: -50%;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #1c1e22;
+  }
     nav{
         position: absolute;
         display: none;
@@ -654,7 +771,16 @@ section{
 
 
 
+@media (max-width: 999px){
+  .nav-links{
+    display: none;
+  }
 
+  .btn-menu{
+    display: none;
+  }
+
+}
 
 
 

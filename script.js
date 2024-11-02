@@ -2,9 +2,9 @@
 var typed = new Typed(".typewriter-text ",
     {
         strings: [" ",
-            "rapper",
+            "Athlète",
            
-            "Hip Hop",
+            "Coach",
            
             "",
            
